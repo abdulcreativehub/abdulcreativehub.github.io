@@ -1,0 +1,11 @@
+<img src="business-banner.png"
+     alt="Abdul Muhaymin Multi Business Ventures"
+     class="business-banner">
+.business-banner {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
