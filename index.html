@@ -3,431 +3,491 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Abdul Muhaymin Multi Business Ventures</title>
 
   <meta name="description"
-    content="Abdul Muhaymin Multi Business Ventures - Printing, Graphic Design, NIN support, CV preparation, computer training and business services in Sabo, Abeokuta.">
+        content="Abdul Muhaymin Multi Business Ventures - Professional graphic design, printing, document and business support services in Ogun State, Nigeria.">
 
- .business-banner {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-   <body>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<img src="business-banner.png"
-     alt="Abdul Muhaymin Multi Business Ventures"
-     class="business-banner">
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #18202a;
+      line-height: 1.6;
+    }
 
+    a {
+      text-decoration: none;
+    }
+
+    /* NAVIGATION */
 
     nav {
-      background: #062b52;
-      padding: 16px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 3px 15px rgba(0,0,0,.15);
-    }
-
-    nav .logo {
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      text-decoration: none;
-    }
-
-    nav .links {
+      background: #101820;
+      padding: 18px 7%;
       display: flex;
-      gap: 18px;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.15);
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
+    .logo {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+
+    .logo span {
+      color: #d6a84f;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      font-size: 14px;
       font-weight: 600;
+      transition: .3s;
     }
 
-    nav a:hover {
-      color: #f4b942;
+    nav ul li a:hover {
+      color: #d6a84f;
     }
+
+    /* HERO */
 
     .hero {
-      color: white;
-      text-align: center;
-      padding: 100px 7%;
+      min-height: 620px;
+      display: flex;
+      align-items: center;
       background:
-        radial-gradient(circle at top right, rgba(244,185,66,.3), transparent 35%),
-        linear-gradient(135deg, #062b52, #075c73, #0a9b62);
+        linear-gradient(120deg, #101820 0%, #172734 55%, #243746 100%);
+      color: white;
+      padding: 80px 7%;
     }
 
-    .hero-badge {
-      display: inline-block;
-      background: rgba(255,255,255,.15);
-      border: 1px solid rgba(255,255,255,.3);
-      padding: 8px 15px;
-      border-radius: 30px;
-      margin-bottom: 20px;
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .small-title {
+      color: #d6a84f;
+      text-transform: uppercase;
       font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
     }
 
     .hero h1 {
-      font-size: 52px;
-      max-width: 950px;
-      margin: auto;
-      line-height: 1.1;
+      font-size: clamp(42px, 6vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: #d6a84f;
     }
 
     .hero p {
-      max-width: 750px;
-      margin: 22px auto;
-      font-size: 19px;
-      color: #eef8ff;
+      max-width: 680px;
+      font-size: 18px;
+      color: #dce3e8;
+      margin-bottom: 35px;
     }
 
     .buttons {
-      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 13px 23px;
-      margin: 7px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: .25s;
+      padding: 14px 25px;
+      border-radius: 6px;
+      font-weight: 700;
+      transition: .3s;
     }
 
-    .btn:hover {
+    .btn-primary {
+      background: #d6a84f;
+      color: #101820;
+    }
+
+    .btn-primary:hover {
       transform: translateY(-3px);
     }
 
-    .gold {
-      background: #f4b942;
-      color: #172033;
+    .btn-outline {
+      border: 1px solid #ffffff;
+      color: #ffffff;
     }
 
-    .white {
-      border: 1px solid white;
-      color: white;
+    .btn-outline:hover {
+      background: #ffffff;
+      color: #101820;
     }
+
+    /* GENERAL */
 
     section {
-      max-width: 1200px;
-      margin: auto;
-      padding: 75px 7%;
+      padding: 80px 7%;
     }
 
-    .title {
+    .section-title {
       text-align: center;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
-    .title h2 {
-      color: #062b52;
-      font-size: 35px;
-      margin-bottom: 8px;
+    .section-title small {
+      color: #b1842e;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    .title p {
-      color: #687386;
+    .section-title h2 {
+      font-size: 38px;
+      margin-top: 8px;
+      color: #101820;
     }
+
+    .section-title p {
+      max-width: 650px;
+      margin: 12px auto 0;
+      color: #66717c;
+    }
+
+    /* ABOUT */
 
     .about {
-      background: white;
-      padding: 38px;
-      border-radius: 18px;
-      text-align: center;
-      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+      background: #ffffff;
     }
 
-    .about p {
-      max-width: 850px;
-      margin: auto;
-      font-size: 17px;
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
     }
+
+    .about-text h3 {
+      font-size: 30px;
+      margin-bottom: 18px;
+      color: #101820;
+    }
+
+    .about-text p {
+      color: #5f6972;
+      margin-bottom: 18px;
+    }
+
+    .about-box {
+      background: #101820;
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      border-left: 5px solid #d6a84f;
+    }
+
+    .about-box h3 {
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .about-box p {
+      color: #dce3e8;
+    }
+
+    /* SERVICES */
 
     .services {
+      background: #f5f7fa;
+    }
+
+    .service-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
     }
 
-    .service {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      border-top: 4px solid #0a9b62;
-      box-shadow: 0 7px 25px rgba(0,0,0,.07);
-      transition: .25s;
+    .service-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      border: 1px solid #e4e8ec;
+      transition: .3s;
     }
 
-    .service:hover {
+    .service-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 14px 30px rgba(0,0,0,.12);
+      box-shadow: 0 12px 30px rgba(0,0,0,.08);
     }
 
-    .icon {
-      font-size: 35px;
+    .service-number {
+      font-size: 13px;
+      color: #b1842e;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
       margin-bottom: 10px;
+      color: #101820;
     }
 
-    .service h3 {
-      color: #062b52;
-      margin-bottom: 8px;
+    .service-card p {
+      color: #6b747c;
+      font-size: 14px;
     }
 
-    .service p {
-      color: #687386;
-    }
+    /* PORTFOLIO */
 
     .portfolio {
-      background: #eef3f8;
-      max-width: none;
-    }
-
-    .portfolio-inner {
-      max-width: 1200px;
-      margin: auto;
+      background: #ffffff;
     }
 
     .portfolio-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+      gap: 22px;
     }
 
-    .design-card {
-      background: white;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,.09);
-      transition: .25s;
-    }
-
-    .design-card:hover {
-      transform: translateY(-7px);
-      box-shadow: 0 15px 35px rgba(0,0,0,.15);
-    }
-
-    .design-preview {
-      min-height: 230px;
-      padding: 25px;
+    .portfolio-card {
+      min-height: 190px;
+      border-radius: 10px;
+      padding: 30px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      position: relative;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: #172734;
+      color: white;
       overflow: hidden;
+      position: relative;
     }
 
-    .design-preview::before {
+    .portfolio-card::before {
       content: "";
       position: absolute;
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
-      background: rgba(255,255,255,.15);
+      background: #d6a84f;
+      right: -45px;
       top: -45px;
-      right: -35px;
+      opacity: .8;
     }
 
-    .design-preview::after {
-      content: "";
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.12);
-      bottom: -35px;
-      left: -25px;
-    }
-
-    .flyer {
-      background: linear-gradient(135deg, #062b52, #0a9b62);
-      color: white;
-    }
-
-    .logo-design {
-      background: linear-gradient(135deg, #171717, #5d4200);
-      color: #f4b942;
-    }
-
-    .business-card {
-      background: linear-gradient(135deg, #0b1930, #253d61);
-      color: white;
-    }
-
-    .poster {
-      background: linear-gradient(135deg, #8c1d40, #f4b942);
-      color: white;
-    }
-
-    .certificate {
-      background: linear-gradient(135deg, #eee7d0, #b98b32);
-      color: #172033;
-    }
-
-    .social {
-      background: linear-gradient(135deg, #5b2c83, #0b7fab);
-      color: white;
-    }
-
-    .mockup-content {
+    .portfolio-card h3,
+    .portfolio-card p {
       position: relative;
       z-index: 2;
     }
 
-    .mockup-icon {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
-
-    .mockup-title {
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .mockup-subtitle {
-      margin-top: 5px;
-      font-size: 14px;
-      opacity: .9;
-    }
-
-    .design-info {
-      padding: 20px;
-    }
-
-    .design-info h3 {
-      color: #062b52;
+    .portfolio-card h3 {
       margin-bottom: 5px;
     }
 
-    .design-info p {
-      color: #687386;
+    .portfolio-card p {
+      color: #dce3e8;
       font-size: 14px;
     }
 
-    .cta {
-      max-width: none;
-      background: linear-gradient(135deg, #062b52, #075c73);
+    /* WHY US */
+
+    .why {
+      background: #101820;
       color: white;
-      text-align: center;
     }
 
-    .cta h2 {
-      font-size: 35px;
+    .why .section-title h2 {
+      color: white;
+    }
+
+    .why .section-title p {
+      color: #bfc8cf;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 30px 20px;
+      border: 1px solid #34434f;
+      border-radius: 10px;
+    }
+
+    .why-card h3 {
+      color: #d6a84f;
       margin-bottom: 10px;
     }
 
-    .cta p {
-      margin-bottom: 15px;
-    }
-
-    .contact {
-      max-width: none;
-      background: #062b52;
-      color: white;
-      text-align: center;
-    }
-
-    .contact .title h2 {
-      color: white;
-    }
-
-    .contact .title p {
-      color: #dce7f2;
-    }
-
-    .contact p {
-      margin: 10px 0;
-    }
-
-    .contact a {
-      color: white;
-    }
-
-    footer {
-      background: #03182e;
-      color: #d5deea;
-      text-align: center;
-      padding: 22px;
+    .why-card p {
+      color: #c4ccd2;
       font-size: 14px;
     }
 
-    @media (max-width: 850px) {
-      .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    /* CTA */
 
-      .hero h1 {
-        font-size: 42px;
-      }
+    .cta {
+      background: #d6a84f;
+      text-align: center;
+      padding: 70px 7%;
     }
 
-    @media (max-width: 650px) {
+    .cta h2 {
+      font-size: 38px;
+      color: #101820;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #303b43;
+      margin-bottom: 25px;
+    }
+
+    .cta .btn {
+      background: #101820;
+      color: white;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      background: #ffffff;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      border: 1px solid #e2e7eb;
+      border-radius: 10px;
+      background: #f8fafb;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 15px;
+      color: #101820;
+    }
+
+    .contact-card p {
+      margin-bottom: 10px;
+      color: #626c75;
+    }
+
+    .contact-card strong {
+      color: #101820;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #0b1116;
+      color: #bfc7cd;
+      text-align: center;
+      padding: 30px 7%;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+
+    footer .gold {
+      color: #d6a84f;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+
       nav {
-        display: block;
-        text-align: center;
+        padding: 16px 5%;
       }
 
-      nav .logo {
-        display: block;
-        margin-bottom: 12px;
-      }
-
-      nav .links {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      nav a {
-        font-size: 13px;
+      nav ul {
+        display: none;
       }
 
       .hero {
         padding: 70px 5%;
       }
 
+      section {
+        padding: 65px 5%;
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-grid,
+      .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+
       .hero h1 {
-        font-size: 34px;
+        font-size: 43px;
       }
 
       .hero p {
         font-size: 16px;
       }
 
-      section {
-        padding: 55px 5%;
+      .section-title h2 {
+        font-size: 30px;
       }
 
-      .title h2 {
-        font-size: 29px;
-      }
-
-      .about {
-        padding: 25px;
-      }
-
-      .portfolio-grid {
+      .service-grid,
+      .portfolio-grid,
+      .why-grid {
         grid-template-columns: 1fr;
       }
 
-      .design-preview {
-        min-height: 210px;
+      .buttons {
+        flex-direction: column;
+        align-items: stretch;
       }
 
       .btn {
-        width: 90%;
-        max-width: 320px;
+        text-align: center;
       }
     }
   </style>
@@ -435,305 +495,383 @@
 
 <body>
 
-  <nav>
-    <a class="logo" href="#">AM MULTI BUSINESS</a>
+  <!-- NAVIGATION -->
 
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Designs</a>
-      <a href="#contact">Contact</a>
+  <nav>
+    <div class="logo">
+      Abdul Muhaymin <span>MBV</span>
     </div>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <header class="hero">
 
-    <div class="hero-badge">
-      PROFESSIONAL DIGITAL & BUSINESS SERVICES
-    </div>
+  <!-- HERO -->
 
-    <h1>
-      Abdul Muhaymin Multi Business Ventures
-    </h1>
+  <section class="hero" id="home">
 
-    <p>
-      Your trusted centre for graphic design, printing,
-      documentation, digital services and business support
-      in Sabo, Abeokuta.
-    </p>
+    <div class="hero-content">
 
-    <div class="buttons">
+      <div class="small-title">
+        Professional Digital & Business Services
+      </div>
 
-      <a class="btn gold"
-         href="https://wa.me/2348082676163"
-         target="_blank">
-        💬 WhatsApp Us
-      </a>
+      <h1>
+        Abdul Muhaymin
+        <span>Multi Business Ventures</span>
+      </h1>
 
-      <a class="btn white"
-         href="tel:08082676163">
-        📞 Call Us
-      </a>
-
-    </div>
-
-  </header>
-
-  <section id="about">
-
-    <div class="title">
-      <h2>About Us</h2>
-      <p>Professional, reliable and convenient.</p>
-    </div>
-
-    <div class="about">
       <p>
-        Abdul Muhaymin Multi Business Ventures provides
-        reliable digital, documentation, printing,
-        graphic design and business support services.
-        We are located in Sabo, Abeokuta and are focused
-        on giving customers convenient and professional
-        service.
+        Professional graphic design, printing, document preparation,
+        computer training and business-support services for individuals
+        and businesses.
       </p>
+
+      <div class="buttons">
+
+        <a
+          href="https://wa.me/2348082676163"
+          class="btn btn-primary"
+          target="_blank">
+          WhatsApp Us
+        </a>
+
+        <a
+          href="tel:08082676163"
+          class="btn btn-outline">
+          Call 08082676163
+        </a>
+
+      </div>
+
     </div>
 
   </section>
 
-  <section id="services">
 
-    <div class="title">
+  <!-- ABOUT -->
+
+  <section class="about" id="about">
+
+    <div class="section-title">
+
+      <small>About Us</small>
+
+      <h2>Reliable. Professional. Creative.</h2>
+
+      <p>
+        We help individuals and small businesses present themselves
+        professionally through quality digital and business services.
+      </p>
+
+    </div>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <h3>Helping businesses look professional</h3>
+
+        <p>
+          Abdul Muhaymin Multi Business Ventures is a growing
+          digital and business-support service based in Ogun State,
+          Nigeria.
+        </p>
+
+        <p>
+          Our goal is to provide affordable and professional services
+          while helping businesses communicate better with their
+          customers.
+        </p>
+
+      </div>
+
+      <div class="about-box">
+
+        <h3>Our Mission</h3>
+
+        <p>
+          To provide reliable, affordable and professional digital
+          services that help individuals and businesses grow.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <div class="section-title">
+
+      <small>What We Do</small>
+
       <h2>Our Services</h2>
-      <p>Quality services for individuals, students and businesses.</p>
+
+      <p>
+        Professional services designed to help you and your business.
+      </p>
+
     </div>
 
-    <div class="services">
+    <div class="service-grid">
 
-      <div class="service">
-        <div class="icon">🪪</div>
-        <h3>NIN Solutions</h3>
-        <p>Legitimate NIN-related support and guidance.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">🖨️</div>
-        <h3>NIN Printout</h3>
-        <p>Professional NIN document printing assistance.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">📋</div>
-        <h3>NIN Enrolment</h3>
-        <p>Guidance for legitimate NIN enrolment processes.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">🔐</div>
-        <h3>BVN Printout</h3>
-        <p>BVN-related printout assistance.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">🖨️</div>
-        <h3>Printing</h3>
-        <p>Quality document and general printing services.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">🎨</div>
+      <div class="service-card">
+        <div class="service-number">01</div>
         <h3>Graphic Design</h3>
-        <p>Flyers, logos, posters, cards and social media designs.</p>
+        <p>Flyers, posters, adverts, social-media graphics and other creative designs.</p>
       </div>
 
-      <div class="service">
-        <div class="icon">🖼️</div>
-        <h3>Frame</h3>
-        <p>Photo and document framing services.</p>
+      <div class="service-card">
+        <div class="service-number">02</div>
+        <h3>Logo Design</h3>
+        <p>Clean and professional logos for businesses, brands and organizations.</p>
       </div>
 
-      <div class="service">
-        <div class="icon">🏢</div>
-        <h3>CAC Registration</h3>
-        <p>Business registration support and guidance.</p>
+      <div class="service-card">
+        <div class="service-number">03</div>
+        <h3>Printing</h3>
+        <p>Professional printing support for business and personal materials.</p>
       </div>
 
-      <div class="service">
-        <div class="icon">📊</div>
-        <h3>Result Checking</h3>
-        <p>Assistance with legitimate result-checking services.</p>
+      <div class="service-card">
+        <div class="service-number">04</div>
+        <h3>Business Cards</h3>
+        <p>Professional business-card designs that help customers remember your brand.</p>
       </div>
 
-      <div class="service">
-        <div class="icon">📄</div>
-        <h3>CV & Admission Letter</h3>
-        <p>CV preparation and admission-document support.</p>
+      <div class="service-card">
+        <div class="service-number">05</div>
+        <h3>CV & Documents</h3>
+        <p>Professional CV, admission-letter and document preparation services.</p>
       </div>
 
-      <div class="service">
-        <div class="icon">💻</div>
+      <div class="service-card">
+        <div class="service-number">06</div>
         <h3>Computer Training</h3>
-        <p>Practical computer and digital skills training.</p>
+        <p>Basic computer and digital-skills training for beginners.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">07</div>
+        <h3>CAC Assistance</h3>
+        <p>Assistance with legitimate business-registration processes.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">08</div>
+        <h3>NIN & BVN Services</h3>
+        <p>Assistance with legitimate printing and permitted documentation services.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-number">09</div>
+        <h3>Result Checking</h3>
+        <p>Assistance with legitimate result-checking and related document services.</p>
       </div>
 
     </div>
 
   </section>
+
+
+  <!-- PORTFOLIO -->
 
   <section class="portfolio" id="portfolio">
 
-    <div class="portfolio-inner">
+    <div class="section-title">
 
-      <div class="title">
-        <h2>Our Design Portfolio</h2>
-        <p>Creative designs for individuals, businesses and brands.</p>
+      <small>Our Work</small>
+
+      <h2>Creative Portfolio</h2>
+
+      <p>
+        Examples of the types of designs and creative services we provide.
+      </p>
+
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+        <h3>Flyer Design</h3>
+        <p>Professional promotional flyers.</p>
       </div>
 
-      <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <h3>Logo Design</h3>
+        <p>Unique identity for your business.</p>
+      </div>
 
-        <div class="design-card">
-          <div class="design-preview flyer">
-            <div class="mockup-content">
-              <div class="mockup-icon">📢</div>
-              <div class="mockup-title">FLYER DESIGN</div>
-              <div class="mockup-subtitle">Bold • Modern • Professional</div>
-            </div>
-          </div>
+      <div class="portfolio-card">
+        <h3>Business Cards</h3>
+        <p>Clean and memorable business cards.</p>
+      </div>
 
-          <div class="design-info">
-            <h3>Flyers</h3>
-            <p>Attractive promotional flyers for businesses, events and products.</p>
-          </div>
-        </div>
+      <div class="portfolio-card">
+        <h3>Poster Design</h3>
+        <p>Eye-catching promotional posters.</p>
+      </div>
 
-        <div class="design-card">
-          <div class="design-preview logo-design">
-            <div class="mockup-content">
-              <div class="mockup-icon">✦</div>
-              <div class="mockup-title">LOGO DESIGN</div>
-              <div class="mockup-subtitle">Unique • Clean • Memorable</div>
-            </div>
-          </div>
+      <div class="portfolio-card">
+        <h3>Certificate Design</h3>
+        <p>Professional certificate layouts.</p>
+      </div>
 
-          <div class="design-info">
-            <h3>Logos</h3>
-            <p>Professional brand logos designed to make businesses stand out.</p>
-          </div>
-        </div>
-
-        <div class="design-card">
-          <div class="design-preview business-card">
-            <div class="mockup-content">
-              <div class="mockup-icon">💳</div>
-              <div class="mockup-title">BUSINESS CARD</div>
-              <div class="mockup-subtitle">Smart • Corporate • Elegant</div>
-            </div>
-          </div>
-
-          <div class="design-info">
-            <h3>Business Cards</h3>
-            <p>Clean business cards that present your brand professionally.</p>
-          </div>
-        </div>
-
-        <div class="design-card">
-          <div class="design-preview poster">
-            <div class="mockup-content">
-              <div class="mockup-icon">📣</div>
-              <div class="mockup-title">POSTER DESIGN</div>
-              <div class="mockup-subtitle">Powerful • Attractive • Clear</div>
-            </div>
-          </div>
-
-          <div class="design-info">
-            <h3>Posters</h3>
-            <p>Eye-catching posters for promotions, events and announcements.</p>
-          </div>
-        </div>
-
-        <div class="design-card">
-          <div class="design-preview certificate">
-            <div class="mockup-content">
-              <div class="mockup-icon">🏆</div>
-              <div class="mockup-title">CERTIFICATE</div>
-              <div class="mockup-subtitle">Elegant • Formal • Premium</div>
-            </div>
-          </div>
-
-          <div class="design-info">
-            <h3>Certificates</h3>
-            <p>Elegant certificate designs for schools, events and organizations.</p>
-          </div>
-        </div>
-
-        <div class="design-card">
-          <div class="design-preview social">
-            <div class="mockup-content">
-              <div class="mockup-icon">📱</div>
-              <div class="mockup-title">SOCIAL MEDIA</div>
-              <div class="mockup-subtitle">Modern • Engaging • Creative</div>
-            </div>
-          </div>
-
-          <div class="design-info">
-            <h3>Social Media Designs</h3>
-            <p>Creative social media graphics for promoting products and services.</p>
-          </div>
-        </div>
-
+      <div class="portfolio-card">
+        <h3>Social Media</h3>
+        <p>Creative online promotional graphics.</p>
       </div>
 
     </div>
 
   </section>
+
+
+  <!-- WHY US -->
+
+  <section class="why">
+
+    <div class="section-title">
+
+      <small>Why Choose Us</small>
+
+      <h2>A Better Way To Present Your Business</h2>
+
+      <p>
+        We focus on quality, professionalism and customer satisfaction.
+      </p>
+
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <h3>Professional</h3>
+        <p>Clean and business-focused designs.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Affordable</h3>
+        <p>Services designed with small businesses in mind.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Creative</h3>
+        <p>Fresh ideas for promoting your business.</p>
+      </div>
+
+      <div class="why-card">
+        <h3>Reliable</h3>
+        <p>We take every customer request seriously.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CALL TO ACTION -->
 
   <section class="cta">
 
     <h2>Need a Professional Design?</h2>
 
     <p>
-      Let us create something attractive for your business,
-      event or personal brand.
+      Let us help you make your business look better.
     </p>
 
-    <a class="btn gold"
-       href="https://wa.me/2348082676163"
-       target="_blank">
-      Start a Design Order
+    <a
+      href="https://wa.me/2348082676163"
+      class="btn"
+      target="_blank">
+      Start a Conversation
     </a>
 
   </section>
+
+
+  <!-- CONTACT -->
 
   <section class="contact" id="contact">
 
-    <div class="title">
+    <div class="section-title">
+
+      <small>Get In Touch</small>
+
       <h2>Contact Us</h2>
-      <p>Get in touch with us today.</p>
+
+      <p>
+        Ready to discuss your next design or business service?
+      </p>
+
     </div>
 
-    <p>📍 Sabo, Abeokuta</p>
+    <div class="contact-grid">
 
-    <p>
-      📞
-      <a href="tel:08082676163">08082676163</a>
-    </p>
+      <div class="contact-card">
 
-    <p>
-      ✉️
-      <a href="mailto:ojobaroabdulmuhaymin@gmail.com">
-        ojobaroabdulmuhaymin@gmail.com
-      </a>
-    </p>
+        <h3>Business Information</h3>
 
-    <a class="btn gold"
-       href="https://wa.me/2348082676163"
-       target="_blank">
-      💬 Message Us on WhatsApp
-    </a>
+        <p>
+          <strong>Business:</strong><br>
+          Abdul Muhaymin Multi Business Ventures
+        </p>
+
+        <p>
+          <strong>Location:</strong><br>
+          Sabo, Abeokuta, Ogun State, Nigeria
+        </p>
+
+      </div>
+
+      <div class="contact-card">
+
+        <h3>Contact Details</h3>
+
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:08082676163">08082676163</a>
+        </p>
+
+        <p>
+          <strong>Email:</strong><br>
+          <a href="mailto:ojobaroabdulmuhaymin@gmail.com">
+            ojobaroabdulmuhaymin@gmail.com
+          </a>
+        </p>
+
+      </div>
+
+    </div>
 
   </section>
 
+
+  <!-- FOOTER -->
+
   <footer>
-    © 2026 Abdul Muhaymin Multi Business Ventures.
-    All Rights Reserved.
+
+    <p>
+      © 2026
+      <strong>Abdul Muhaymin Multi Business Ventures</strong>.
+      All Rights Reserved.
+    </p>
+
+    <p class="gold">
+      Professional Ideas. Creative Solutions.
+    </p>
+
   </footer>
 
 </body>
