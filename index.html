@@ -6,9 +6,6 @@
 
 <title>Abdul Muhaymin Multi Business Ventures</title>
 
-<meta name="description"
-content="Abdul Muhaymin Multi Business Ventures - Professional graphic design, printing and digital business services in Nigeria.">
-
 <style>
 
 *{
@@ -22,10 +19,9 @@ html{
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial,Helvetica,sans-serif;
     background:#080d12;
-    color:#f5f5f5;
-    line-height:1.6;
+    color:#fff;
 }
 
 a{
@@ -33,22 +29,26 @@ a{
     color:inherit;
 }
 
-/* ================= NAVBAR ================= */
+button,
+input{
+    font-family:inherit;
+}
+
+/* NAVBAR */
 
 .navbar{
     position:sticky;
     top:0;
-    z-index:999;
-    background:rgba(8,13,18,.95);
-    backdrop-filter:blur(15px);
-    border-bottom:1px solid rgba(212,168,79,.18);
+    z-index:1000;
+    background:rgba(8,13,18,.97);
+    border-bottom:1px solid #26333d;
 }
 
 .nav-container{
     width:90%;
     max-width:1200px;
-    margin:auto;
     height:75px;
+    margin:auto;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -57,7 +57,6 @@ a{
 .brand{
     font-size:20px;
     font-weight:800;
-    letter-spacing:.5px;
 }
 
 .brand span{
@@ -73,8 +72,6 @@ a{
 .nav-links a{
     color:#cbd2d8;
     font-size:14px;
-    font-weight:600;
-    transition:.3s;
 }
 
 .nav-links a:hover{
@@ -86,84 +83,56 @@ a{
     gap:10px;
 }
 
-.login-btn,
-.signup-btn{
-    padding:10px 17px;
+.nav-btn{
+    padding:10px 16px;
     border-radius:6px;
     font-size:13px;
-    font-weight:700;
+    font-weight:bold;
 }
 
-.login-btn{
-    border:1px solid #555;
+.login-nav{
+    border:1px solid #59636b;
 }
 
-.signup-btn{
+.signup-nav{
     background:#d6a84f;
     color:#101820;
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-    min-height:680px;
-    position:relative;
-    overflow:hidden;
+    min-height:650px;
     display:flex;
     align-items:center;
+    position:relative;
+    overflow:hidden;
     background:
-    radial-gradient(circle at 80% 30%,rgba(214,168,79,.17),transparent 30%),
-    radial-gradient(circle at 10% 80%,rgba(37,101,130,.15),transparent 30%),
-    #080d12;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    width:400px;
-    height:400px;
-    border:1px solid rgba(214,168,79,.15);
-    border-radius:50%;
-    right:-100px;
-    top:80px;
-}
-
-.hero::after{
-    content:"";
-    position:absolute;
-    width:250px;
-    height:250px;
-    border:1px solid rgba(214,168,79,.1);
-    border-radius:50%;
-    right:0;
-    top:155px;
+    radial-gradient(circle at 85% 25%,rgba(214,168,79,.18),transparent 30%),
+    linear-gradient(135deg,#080d12,#111c25);
 }
 
 .hero-container{
     width:90%;
     max-width:1200px;
     margin:auto;
-    position:relative;
-    z-index:2;
 }
 
-.hero-label{
+.badge{
     display:inline-block;
     color:#d6a84f;
-    border:1px solid rgba(214,168,79,.35);
-    padding:8px 15px;
+    border:1px solid #69562f;
+    padding:8px 16px;
     border-radius:30px;
     font-size:12px;
-    text-transform:uppercase;
     letter-spacing:2px;
     margin-bottom:20px;
 }
 
 .hero h1{
     max-width:850px;
-    font-size:clamp(45px,7vw,82px);
+    font-size:clamp(45px,7vw,80px);
     line-height:1;
-    letter-spacing:-2px;
     margin-bottom:25px;
 }
 
@@ -171,164 +140,104 @@ a{
     color:#d6a84f;
 }
 
-.hero-description{
+.hero p{
     max-width:650px;
-    color:#aeb8c0;
+    color:#aab4bc;
     font-size:18px;
     margin-bottom:35px;
 }
 
-.hero-actions{
+.hero-buttons{
     display:flex;
     gap:15px;
     flex-wrap:wrap;
 }
 
-.primary-btn{
+.gold-btn,
+.outline-btn{
+    padding:15px 25px;
+    border-radius:7px;
+    font-weight:bold;
+}
+
+.gold-btn{
     background:#d6a84f;
     color:#101820;
-    padding:15px 27px;
-    border-radius:7px;
-    font-weight:800;
-    transition:.3s;
 }
 
-.primary-btn:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 30px rgba(214,168,79,.2);
+.outline-btn{
+    border:1px solid #52606a;
 }
 
-.secondary-btn{
-    border:1px solid #47515a;
-    padding:15px 27px;
-    border-radius:7px;
-    font-weight:700;
-    transition:.3s;
+.gold-btn:hover{
+    transform:translateY(-2px);
 }
 
-.secondary-btn:hover{
-    border-color:#d6a84f;
-    color:#d6a84f;
-}
-
-/* ================= STATS ================= */
-
-.stats{
-    width:90%;
-    max-width:1200px;
-    margin:-55px auto 0;
-    position:relative;
-    z-index:5;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    background:#101820;
-    border:1px solid #26323b;
-    border-radius:15px;
-    overflow:hidden;
-}
-
-.stat{
-    padding:30px;
-    text-align:center;
-    border-right:1px solid #26323b;
-}
-
-.stat:last-child{
-    border-right:none;
-}
-
-.stat strong{
-    display:block;
-    color:#d6a84f;
-    font-size:28px;
-    margin-bottom:5px;
-}
-
-.stat span{
-    color:#9ca7af;
-    font-size:13px;
-}
-
-/* ================= GENERAL ================= */
+/* SECTIONS */
 
 .section{
     width:90%;
     max-width:1200px;
     margin:auto;
-    padding:100px 0;
+    padding:90px 0;
 }
 
-.section-heading{
-    margin-bottom:55px;
+.section-title{
+    margin-bottom:45px;
 }
 
-.section-heading small{
+.section-title small{
     color:#d6a84f;
     text-transform:uppercase;
     letter-spacing:3px;
-    font-weight:800;
     font-size:12px;
+    font-weight:bold;
 }
 
-.section-heading h2{
-    font-size:45px;
-    margin-top:10px;
+.section-title h2{
+    font-size:42px;
+    margin-top:8px;
 }
 
-.section-heading p{
-    color:#8f9aa3;
+.section-title p{
+    color:#929da5;
     max-width:650px;
     margin-top:12px;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
+
+.about{
+    background:#0d141b;
+}
 
 .about-grid{
     display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:60px;
-    align-items:center;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
 }
 
-.about-text p{
-    color:#9ba5ad;
-    margin-bottom:20px;
+.about p{
+    color:#9ca7af;
+    margin-bottom:18px;
 }
 
-.about-panel{
-    position:relative;
-    background:linear-gradient(145deg,#131d25,#0d141b);
-    border:1px solid #293640;
-    padding:45px;
-    border-radius:18px;
-    overflow:hidden;
+.about-box{
+    background:#111c25;
+    border:1px solid #293741;
+    border-radius:15px;
+    padding:40px;
 }
 
-.about-panel::before{
-    content:"";
-    position:absolute;
-    width:140px;
-    height:140px;
-    border-radius:50%;
-    border:25px solid rgba(214,168,79,.07);
-    right:-30px;
-    top:-30px;
-}
-
-.about-panel h3{
+.about-box h3{
     color:#d6a84f;
-    font-size:25px;
     margin-bottom:15px;
 }
 
-.about-panel p{
-    color:#a7b0b7;
-}
+/* SERVICES */
 
-/* ================= SERVICES ================= */
-
-.services-section{
-    background:#0b1117;
+.services{
+    background:#080d12;
 }
 
 .service-grid{
@@ -339,38 +248,39 @@ a{
 
 .service{
     background:#101820;
-    border:1px solid #25313a;
-    padding:32px;
-    border-radius:14px;
-    transition:.35s;
-    position:relative;
-    overflow:hidden;
+    border:1px solid #27343e;
+    padding:30px;
+    border-radius:13px;
+    transition:.3s;
 }
 
 .service:hover{
-    transform:translateY(-7px);
+    transform:translateY(-5px);
     border-color:#d6a84f;
 }
 
 .service-number{
     color:#d6a84f;
     font-size:12px;
-    font-weight:800;
+    font-weight:bold;
     letter-spacing:2px;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .service h3{
-    font-size:20px;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
 
 .service p{
-    color:#8e99a2;
+    color:#89959e;
     font-size:14px;
 }
 
-/* ================= PORTFOLIO ================= */
+/* PORTFOLIO */
+
+.portfolio{
+    background:#0d141b;
+}
 
 .portfolio-grid{
     display:grid;
@@ -378,156 +288,85 @@ a{
     gap:20px;
 }
 
-.work{
-    min-height:230px;
+.portfolio-card{
+    height:220px;
     padding:30px;
-    border-radius:15px;
-    background:
-    linear-gradient(145deg,#192630,#0c1319);
-    border:1px solid #293640;
-    position:relative;
-    overflow:hidden;
+    border:1px solid #293741;
+    border-radius:14px;
+    background:linear-gradient(145deg,#172530,#0c1319);
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
 }
 
-.work::before{
-    content:"";
-    position:absolute;
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    border:35px solid rgba(214,168,79,.08);
-    right:-70px;
-    top:-70px;
-}
-
-.work-number{
-    position:absolute;
-    top:25px;
-    left:25px;
+.portfolio-card span{
     color:#d6a84f;
-    font-weight:800;
+    font-size:12px;
+    margin-bottom:8px;
 }
 
-.work h3{
-    position:relative;
-    z-index:2;
-}
-
-.work p{
+.portfolio-card p{
     color:#89959e;
     font-size:13px;
 }
 
-/* ================= WHY US ================= */
-
-.why-section{
-    background:#d6a84f;
-    color:#101820;
-}
-
-.why-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.why{
-    background:rgba(255,255,255,.3);
-    padding:30px;
-    border-radius:12px;
-}
-
-.why h3{
-    margin-bottom:10px;
-}
-
-.why p{
-    font-size:14px;
-}
-
-/* ================= CTA ================= */
-
-.cta{
-    text-align:center;
-    padding:100px 20px;
-    background:
-    radial-gradient(circle,#182832,#080d12 65%);
-}
-
-.cta h2{
-    font-size:45px;
-    margin-bottom:15px;
-}
-
-.cta p{
-    color:#929da5;
-    margin-bottom:30px;
-}
-
-/* ================= CONTACT ================= */
+/* CONTACT */
 
 .contact-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:1fr 1fr;
     gap:20px;
 }
 
 .contact-card{
     background:#101820;
-    border:1px solid #293640;
-    padding:35px;
-    border-radius:14px;
+    border:1px solid #293741;
+    padding:30px;
+    border-radius:13px;
 }
 
 .contact-card h3{
     color:#d6a84f;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .contact-card p{
-    color:#9ca6ad;
+    color:#9ca7af;
     margin-bottom:12px;
 }
 
-.contact-card strong{
-    color:#f5f5f5;
-}
+/* AUTH */
 
-/* ================= LOGIN ================= */
-
-.auth-section{
-    min-height:100vh;
+.auth-area{
+    min-height:650px;
     display:flex;
-    justify-content:center;
     align-items:center;
-    padding:100px 20px;
+    justify-content:center;
+    padding:80px 20px;
     background:
-    radial-gradient(circle at top,#1b2c38,#080d12 60%);
+    radial-gradient(circle at center,#182832,#080d12 65%);
 }
 
 .auth-box{
     width:100%;
     max-width:430px;
     background:#101820;
-    border:1px solid #303d47;
+    border:1px solid #35434e;
     border-radius:18px;
     padding:40px;
-    box-shadow:0 25px 80px rgba(0,0,0,.35);
+    box-shadow:0 20px 60px rgba(0,0,0,.4);
 }
 
 .auth-box h2{
     text-align:center;
-    margin-bottom:8px;
+    font-size:32px;
 }
 
-.auth-box .auth-subtitle{
+.auth-description{
     text-align:center;
     color:#87939c;
     font-size:14px;
-    margin-bottom:30px;
+    margin:8px 0 30px;
 }
 
 .form-group{
@@ -536,18 +375,18 @@ a{
 
 .form-group label{
     display:block;
+    color:#cbd2d8;
     font-size:13px;
-    color:#cbd2d7;
     margin-bottom:7px;
 }
 
 .form-group input{
     width:100%;
     padding:14px;
-    background:#0b1117;
-    border:1px solid #35424c;
+    border:1px solid #394752;
     border-radius:7px;
-    color:white;
+    background:#080d12;
+    color:#fff;
     outline:none;
 }
 
@@ -555,32 +394,123 @@ a{
     border-color:#d6a84f;
 }
 
-.auth-button{
+.auth-submit{
     width:100%;
-    border:none;
+    padding:14px;
+    border:0;
+    border-radius:7px;
     background:#d6a84f;
     color:#101820;
-    padding:14px;
-    border-radius:7px;
-    font-weight:800;
+    font-weight:bold;
     cursor:pointer;
 }
 
-.auth-note{
+.auth-submit:hover{
+    opacity:.9;
+}
+
+.switch-text{
     text-align:center;
-    color:#727e87;
-    font-size:12px;
+    color:#87939c;
+    font-size:13px;
     margin-top:20px;
 }
 
-/* ================= FOOTER ================= */
+.switch-text button{
+    background:none;
+    border:0;
+    color:#d6a84f;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.message{
+    display:none;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:15px;
+    text-align:center;
+    font-size:13px;
+}
+
+.error{
+    background:#35191b;
+    color:#ff9c9c;
+}
+
+.success{
+    background:#17331f;
+    color:#9ae6aa;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:none;
+    min-height:500px;
+    padding:90px 20px;
+    background:#0d141b;
+    text-align:center;
+}
+
+.dashboard-box{
+    max-width:600px;
+    margin:auto;
+    background:#101820;
+    border:1px solid #293741;
+    border-radius:15px;
+    padding:45px;
+}
+
+.dashboard-box h2{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.dashboard-box h2 span{
+    color:#d6a84f;
+}
+
+.dashboard-box p{
+    color:#929da5;
+    margin-bottom:25px;
+}
+
+.logout{
+    border:0;
+    background:#d6a84f;
+    color:#101820;
+    padding:13px 25px;
+    border-radius:7px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    padding:90px 20px;
+    background:#d6a84f;
+    color:#101820;
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+/* FOOTER */
 
 footer{
     background:#05090d;
-    border-top:1px solid #202b33;
-    padding:35px 20px;
     text-align:center;
-    color:#77828a;
+    padding:30px 20px;
+    color:#78838b;
     font-size:13px;
 }
 
@@ -592,7 +522,7 @@ footer span{
     color:#d6a84f;
 }
 
-/* ================= RESPONSIVE ================= */
+/* MOBILE */
 
 @media(max-width:900px){
 
@@ -605,14 +535,10 @@ footer span{
         grid-template-columns:repeat(2,1fr);
     }
 
-    .why-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .about-grid{
+    .about-grid,
+    .contact-grid{
         grid-template-columns:1fr;
     }
-
 }
 
 @media(max-width:600px){
@@ -625,44 +551,17 @@ footer span{
         font-size:45px;
     }
 
-    .hero-description{
-        font-size:16px;
-    }
-
-    .stats{
-        grid-template-columns:1fr;
-        margin-top:0;
-        width:90%;
-    }
-
-    .stat{
-        border-right:none;
-        border-bottom:1px solid #26323b;
-    }
-
-    .stat:last-child{
-        border-bottom:none;
-    }
-
     .service-grid,
-    .portfolio-grid,
-    .why-grid,
-    .contact-grid{
+    .portfolio-grid{
         grid-template-columns:1fr;
     }
 
-    .section-heading h2,
-    .cta h2{
+    .section-title h2{
         font-size:34px;
     }
 
-    .hero-actions{
-        flex-direction:column;
-    }
-
-    .primary-btn,
-    .secondary-btn{
-        text-align:center;
+    .auth-box{
+        padding:30px 22px;
     }
 
 }
@@ -691,8 +590,15 @@ Abdul Muhaymin <span>MBV</span>
 </ul>
 
 <div class="nav-buttons">
-<a href="#login" class="login-btn">Sign In</a>
-<a href="#signup" class="signup-btn">Create Account</a>
+
+<a href="#signin" class="nav-btn login-nav">
+Sign In
+</a>
+
+<a href="#signup" class="nav-btn signup-nav">
+Create Account
+</a>
+
 </div>
 
 </div>
@@ -706,8 +612,8 @@ Abdul Muhaymin <span>MBV</span>
 
 <div class="hero-container">
 
-<div class="hero-label">
-Creative • Digital • Business Services
+<div class="badge">
+Creative • Digital • Business
 </div>
 
 <h1>
@@ -716,23 +622,21 @@ Build Your Business.
 Make It <span>Stand Out.</span>
 </h1>
 
-<p class="hero-description">
-Abdul Muhaymin Multi Business Ventures provides professional
-graphic design, printing, document preparation and digital
-business-support services.
+<p>
+Professional graphic design, printing, document preparation,
+computer training and business-support services.
 </p>
 
-<div class="hero-actions">
+<div class="hero-buttons">
 
 <a href="https://wa.me/2348082676163"
 target="_blank"
-class="primary-btn">
-Talk to Us on WhatsApp
+class="gold-btn">
+Contact Us
 </a>
 
-<a href="#services"
-class="secondary-btn">
-Explore Services
+<a href="#services" class="outline-btn">
+View Services
 </a>
 
 </div>
@@ -742,76 +646,50 @@ Explore Services
 </section>
 
 
-<!-- STATS -->
-
-<div class="stats">
-
-<div class="stat">
-<strong>09+</strong>
-<span>Business Services</span>
-</div>
-
-<div class="stat">
-<strong>100%</strong>
-<span>Creative Focus</span>
-</div>
-
-<div class="stat">
-<strong>24/7</strong>
-<span>Online Portfolio</span>
-</div>
-
-</div>
-
-
 <!-- ABOUT -->
 
-<section class="section" id="about">
+<section class="about" id="about">
 
-<div class="section-heading">
+<div class="section">
 
-<small>About The Business</small>
+<div class="section-title">
+
+<small>About Us</small>
 
 <h2>Professional Ideas.<br>Creative Solutions.</h2>
 
 <p>
-Helping individuals and small businesses present themselves
-in a professional way.
+Helping individuals and small businesses present themselves professionally.
 </p>
 
 </div>
 
 <div class="about-grid">
 
-<div class="about-text">
+<div>
 
 <p>
 Abdul Muhaymin Multi Business Ventures is a growing
-digital and business-support brand based in Ogun State, Nigeria.
+digital and business-support service based in Ogun State, Nigeria.
 </p>
 
 <p>
-Our focus is simple: provide useful services, create quality
-designs and help businesses communicate professionally with
-their customers.
-</p>
-
-<p>
-We are building a modern service brand that combines
-creativity, technology and business support.
+Our goal is to provide affordable, reliable and professional
+services to individuals, entrepreneurs and businesses.
 </p>
 
 </div>
 
-<div class="about-panel">
+<div class="about-box">
 
 <h3>Our Mission</h3>
 
 <p>
-To provide affordable, reliable and professional digital
-services that help individuals and businesses improve their
-presentation and reach their customers.
+To help businesses and individuals communicate professionally
+through creativity, technology and useful business services.
 </p>
+
+</div>
 
 </div>
 
@@ -822,19 +700,18 @@ presentation and reach their customers.
 
 <!-- SERVICES -->
 
-<section class="services-section">
+<section class="services" id="services">
 
 <div class="section">
 
-<div class="section-heading">
+<div class="section-title">
 
-<small>What We Offer</small>
+<small>What We Do</small>
 
 <h2>Our Services</h2>
 
 <p>
-Professional services for individuals, students,
-entrepreneurs and small businesses.
+Professional services for individuals and businesses.
 </p>
 
 </div>
@@ -844,31 +721,31 @@ entrepreneurs and small businesses.
 <div class="service">
 <div class="service-number">01 / DESIGN</div>
 <h3>Graphic Design</h3>
-<p>Professional flyers, posters, adverts and digital graphics.</p>
+<p>Flyers, posters, adverts and promotional graphics.</p>
 </div>
 
 <div class="service">
 <div class="service-number">02 / BRANDING</div>
 <h3>Logo Design</h3>
-<p>Unique visual identities for businesses and personal brands.</p>
+<p>Professional logos and brand identities.</p>
 </div>
 
 <div class="service">
 <div class="service-number">03 / PRINT</div>
 <h3>Printing</h3>
-<p>Professional printing support for business materials.</p>
+<p>Professional printing support and materials.</p>
 </div>
 
 <div class="service">
 <div class="service-number">04 / BUSINESS</div>
 <h3>Business Cards</h3>
-<p>Clean business cards designed to represent your brand.</p>
+<p>Clean and professional business-card designs.</p>
 </div>
 
 <div class="service">
 <div class="service-number">05 / DOCUMENTS</div>
 <h3>CV & Documents</h3>
-<p>Professional CV and document preparation services.</p>
+<p>Professional CV and document preparation.</p>
 </div>
 
 <div class="service">
@@ -880,7 +757,7 @@ entrepreneurs and small businesses.
 <div class="service">
 <div class="service-number">07 / REGISTRATION</div>
 <h3>CAC Assistance</h3>
-<p>Assistance with legitimate business-registration processes.</p>
+<p>Assistance with legitimate registration processes.</p>
 </div>
 
 <div class="service">
@@ -904,97 +781,58 @@ entrepreneurs and small businesses.
 
 <!-- PORTFOLIO -->
 
-<section class="section" id="portfolio">
+<section class="portfolio" id="portfolio">
 
-<div class="section-heading">
+<div class="section">
 
-<small>Selected Work</small>
+<div class="section-title">
+
+<small>Our Work</small>
 
 <h2>Creative Portfolio</h2>
 
 <p>
-Professional design categories for businesses and individuals.
+Some of the design services available from our business.
 </p>
 
 </div>
 
 <div class="portfolio-grid">
 
-<div class="work">
-<span class="work-number">01</span>
+<div class="portfolio-card">
+<span>01</span>
 <h3>Flyer Design</h3>
-<p>Promotional designs that communicate clearly.</p>
+<p>Promotional designs for businesses.</p>
 </div>
 
-<div class="work">
-<span class="work-number">02</span>
+<div class="portfolio-card">
+<span>02</span>
 <h3>Logo Design</h3>
-<p>Distinctive identities for growing brands.</p>
+<p>Professional brand identities.</p>
 </div>
 
-<div class="work">
-<span class="work-number">03</span>
+<div class="portfolio-card">
+<span>03</span>
 <h3>Business Cards</h3>
-<p>Professional contact and identity designs.</p>
+<p>Clean business identity designs.</p>
 </div>
 
-<div class="work">
-<span class="work-number">04</span>
+<div class="portfolio-card">
+<span>04</span>
 <h3>Poster Design</h3>
-<p>Strong visual communication for promotions.</p>
+<p>Promotional posters and adverts.</p>
 </div>
 
-<div class="work">
-<span class="work-number">05</span>
+<div class="portfolio-card">
+<span>05</span>
 <h3>Certificate Design</h3>
-<p>Clean and professional certificate layouts.</p>
+<p>Professional certificate layouts.</p>
 </div>
 
-<div class="work">
-<span class="work-number">06</span>
-<h3>Social Media</h3>
-<p>Modern promotional graphics for online businesses.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- WHY CHOOSE US -->
-
-<section class="why-section">
-
-<div class="section">
-
-<div class="section-heading">
-
-<small>Why Us</small>
-
-<h2>Built For Growing Businesses</h2>
-
-</div>
-
-<div class="why-grid">
-
-<div class="why">
-<h3>Professional</h3>
-<p>Clean, modern and business-focused work.</p>
-</div>
-
-<div class="why">
-<h3>Creative</h3>
-<p>Fresh ideas designed to make your brand stand out.</p>
-</div>
-
-<div class="why">
-<h3>Affordable</h3>
-<p>Services designed with small businesses in mind.</p>
-</div>
-
-<div class="why">
-<h3>Reliable</h3>
-<p>Every customer request is treated seriously.</p>
+<div class="portfolio-card">
+<span>06</span>
+<h3>Social Media Design</h3>
+<p>Modern promotional graphics.</p>
 </div>
 
 </div>
@@ -1008,7 +846,7 @@ Professional design categories for businesses and individuals.
 
 <section class="cta">
 
-<h2>Ready To Make Your Business Stand Out?</h2>
+<h2>Ready To Work With Us?</h2>
 
 <p>
 Let's create something professional for your business.
@@ -1016,8 +854,8 @@ Let's create something professional for your business.
 
 <a href="https://wa.me/2348082676163"
 target="_blank"
-class="primary-btn">
-Contact Us
+class="gold-btn">
+Talk To Us
 </a>
 
 </section>
@@ -1027,15 +865,14 @@ Contact Us
 
 <section class="section" id="contact">
 
-<div class="section-heading">
+<div class="section-title">
 
 <small>Contact</small>
 
-<h2>Let's Work Together</h2>
+<h2>Get In Touch</h2>
 
 <p>
-Have a project or need a business service?
-Get in touch.
+We're ready to discuss your next project.
 </p>
 
 </div>
@@ -1047,7 +884,7 @@ Get in touch.
 <h3>Business Information</h3>
 
 <p>
-<strong>Business Name:</strong><br>
+<strong>Business:</strong><br>
 Abdul Muhaymin Multi Business Ventures
 </p>
 
@@ -1083,23 +920,26 @@ ojobaroabdulmuhaymin@gmail.com
 
 <!-- SIGN IN -->
 
-<section class="auth-section" id="login">
+<section class="auth-area" id="signin">
 
 <div class="auth-box">
 
-<h2>Welcome Back</h2>
+<h2>Sign In</h2>
 
-<p class="auth-subtitle">
-Sign in to your customer account
+<p class="auth-description">
+Welcome back to Abdul Muhaymin Multi Business Ventures
 </p>
 
-<form onsubmit="return false;">
+<div id="loginMessage" class="message"></div>
+
+<form id="loginForm">
 
 <div class="form-group">
 
 <label>Email Address</label>
 
 <input
+id="loginEmail"
 type="email"
 placeholder="Enter your email"
 required>
@@ -1111,21 +951,24 @@ required>
 <label>Password</label>
 
 <input
+id="loginPassword"
 type="password"
 placeholder="Enter your password"
 required>
 
 </div>
 
-<button class="auth-button">
+<button class="auth-submit" type="submit">
 Sign In
 </button>
 
 </form>
 
-<p class="auth-note">
-This is currently a design interface. Secure account
-authentication requires a backend system.
+<p class="switch-text">
+Don't have an account?
+<button type="button" onclick="showSignup()">
+Create Account
+</button>
 </p>
 
 </div>
@@ -1135,25 +978,28 @@ authentication requires a backend system.
 
 <!-- CREATE ACCOUNT -->
 
-<section class="auth-section" id="signup">
+<section class="auth-area" id="signup">
 
 <div class="auth-box">
 
 <h2>Create Account</h2>
 
-<p class="auth-subtitle">
-Join Abdul Muhaymin Multi Business Ventures
+<p class="auth-description">
+Create your customer account
 </p>
 
-<form onsubmit="return false;">
+<div id="signupMessage" class="message"></div>
+
+<form id="signupForm">
 
 <div class="form-group">
 
 <label>Full Name</label>
 
 <input
+id="signupName"
 type="text"
-placeholder="Enter your name"
+placeholder="Enter your full name"
 required>
 
 </div>
@@ -1163,6 +1009,7 @@ required>
 <label>Email Address</label>
 
 <input
+id="signupEmail"
 type="email"
 placeholder="Enter your email"
 required>
@@ -1174,22 +1021,48 @@ required>
 <label>Password</label>
 
 <input
+id="signupPassword"
 type="password"
 placeholder="Create a password"
 required>
 
 </div>
 
-<button class="auth-button">
+<button class="auth-submit" type="submit">
 Create Account
 </button>
 
 </form>
 
-<p class="auth-note">
-Secure account creation will require a proper
-authentication service.
+<p class="switch-text">
+Already have an account?
+<button type="button" onclick="showSignin()">
+Sign In
+</button>
 </p>
+
+</div>
+
+</section>
+
+
+<!-- CUSTOMER DASHBOARD -->
+
+<section class="dashboard" id="dashboard">
+
+<div class="dashboard-box">
+
+<h2>
+Welcome, <span id="customerName"></span>
+</h2>
+
+<p>
+You are signed in to Abdul Muhaymin Multi Business Ventures.
+</p>
+
+<button class="logout" onclick="logout()">
+Sign Out
+</button>
 
 </div>
 
@@ -1209,6 +1082,219 @@ authentication service.
 </p>
 
 </footer>
+
+
+<script>
+
+/* ================= SHOW SIGNUP ================= */
+
+function showSignup(){
+
+    document.getElementById("signup").scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* ================= SHOW SIGNIN ================= */
+
+function showSignin(){
+
+    document.getElementById("signin").scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+/* ================= CREATE ACCOUNT ================= */
+
+document.getElementById("signupForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("signupName").value.trim();
+
+    const email =
+        document.getElementById("signupEmail").value.trim().toLowerCase();
+
+    const password =
+        document.getElementById("signupPassword").value;
+
+    const message =
+        document.getElementById("signupMessage");
+
+
+    if(password.length < 6){
+
+        message.className = "message error";
+
+        message.textContent =
+        "Password must contain at least 6 characters.";
+
+        message.style.display = "block";
+
+        return;
+    }
+
+
+    const account = {
+
+        name:name,
+        email:email,
+        password:password
+
+    };
+
+
+    localStorage.setItem(
+        "abdulBusinessAccount",
+        JSON.stringify(account)
+    );
+
+
+    message.className = "message success";
+
+    message.textContent =
+    "Account created successfully! Taking you to Sign In...";
+
+    message.style.display = "block";
+
+
+    setTimeout(function(){
+
+        document.getElementById("loginEmail").value = email;
+
+        showSignin();
+
+    },1200);
+
+});
+
+
+/* ================= SIGN IN ================= */
+
+document.getElementById("loginForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    const email =
+        document.getElementById("loginEmail").value.trim().toLowerCase();
+
+    const password =
+        document.getElementById("loginPassword").value;
+
+    const message =
+        document.getElementById("loginMessage");
+
+
+    const savedAccount =
+        localStorage.getItem("abdulBusinessAccount");
+
+
+    if(!savedAccount){
+
+        message.className = "message error";
+
+        message.textContent =
+        "No account found. Please create an account first.";
+
+        message.style.display = "block";
+
+        return;
+    }
+
+
+    const account =
+        JSON.parse(savedAccount);
+
+
+    if(
+        email === account.email &&
+        password === account.password
+    ){
+
+        localStorage.setItem(
+            "abdulLoggedIn",
+            "true"
+        );
+
+
+        document.getElementById("customerName").textContent =
+            account.name;
+
+
+        document.getElementById("dashboard").style.display =
+            "block";
+
+
+        document.getElementById("dashboard").scrollIntoView({
+            behavior:"smooth"
+        });
+
+
+        message.style.display = "none";
+
+
+    }else{
+
+        message.className = "message error";
+
+        message.textContent =
+        "Email or password is incorrect.";
+
+        message.style.display = "block";
+
+    }
+
+});
+
+
+/* ================= LOGOUT ================= */
+
+function logout(){
+
+    localStorage.removeItem("abdulLoggedIn");
+
+    document.getElementById("dashboard").style.display =
+        "none";
+
+    document.getElementById("loginForm").reset();
+
+    showSignin();
+
+}
+
+
+/* ================= CHECK LOGIN ================= */
+
+window.addEventListener("load", function(){
+
+    const loggedIn =
+        localStorage.getItem("abdulLoggedIn");
+
+    const savedAccount =
+        localStorage.getItem("abdulBusinessAccount");
+
+
+    if(loggedIn === "true" && savedAccount){
+
+        const account =
+            JSON.parse(savedAccount);
+
+        document.getElementById("customerName").textContent =
+            account.name;
+
+        document.getElementById("dashboard").style.display =
+            "block";
+
+    }
+
+});
+
+</script>
 
 </body>
 </html>
